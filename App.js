@@ -12,12 +12,21 @@ import Advising from './Screens/Advising';
 import Scholarships from './Screens/Scholarships';
 import AMC from './Screens/AMC';
 import Discord from './Screens/Discord';
-import * as Font from "expo-font";
-import Apploading from "expo-app-loading";
+import { isLoading, useFonts } from 'expo-font';
+import { Apploading } from 'expo';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
+  let [fontsLoaded] = useFonts({
+    'imprintMTS': require('./assets/fonts/Imprint_MT_Shadow.ttf'),
+    //'MontserratM': require('./assets/fonts/Montserrat-Medium.ttf'),
+    //'MontserratB': require('./assets/fonts/Montserrat-Bold.ttf')
+  });
+  if(!fontsLoaded){
+    return (<Apploading/>);
+  }
+
   return (
     <NavigationContainer>
       <Stack.Navigator>

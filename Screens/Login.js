@@ -2,7 +2,7 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
-import { 
+import {
   ImageBackground, 
   Image, 
   StyleSheet, 
@@ -14,6 +14,7 @@ import {
   TouchableOpacity, 
   ProgressViewIOSComponent
 } from 'react-native';
+
 import { withSafeAreaInsets } from 'react-native-safe-area-context';
 const image1 = { uri: "https://cdn.discordapp.com/attachments/1011816280740876391/1021582027524427858/Home_Screen.jpg" };
 const image2 = { uri: "https://cdn.discordapp.com/attachments/1011816280740876391/1021582027142725632/logo.png"}
@@ -80,7 +81,7 @@ const styles = StyleSheet.create({
     left: 50,
     right: 50,
     textAlign: 'center',
-    fontFamily: 'Imprint MT Shadow',
+    fontFamily: 'imprintMTS',
   },
   text2: {
     color: 'white',

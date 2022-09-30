@@ -7,15 +7,8 @@ import * as Font from "expo-font";
 import { useFonts} from 'expo-font';
 
 
-
-  
-  
-
 const image1 = { uri: "https://cdn.discordapp.com/attachments/1011816280740876391/1021582027524427858/Home_Screen.jpg" };
 const Stack = createNativeStackNavigator(); 
-
-
-
 
 
 const Menu = ({navigation}) => (
@@ -68,7 +61,6 @@ const styles = StyleSheet.create({
     left: 10,
     right: 10,
     textAlign: 'center',
-    fontFamily: 'Cormorant_SC',
   },
   text2: {
     color: "white",
@@ -79,7 +71,6 @@ const styles = StyleSheet.create({
     right: 10,
     textAlign: 'center',
     
-    fontFamily: 'CormorantSC-Medium',
     textDecorationLine: 'underline',
   },
 });

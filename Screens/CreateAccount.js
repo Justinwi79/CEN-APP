@@ -62,7 +62,6 @@ const styles = StyleSheet.create({
     left: 30,
     right: 30,
     textAlign: 'center',
-    fontFamily: 'Imprint MT Shadow',
   },
   text2: {
     color: 'white',
